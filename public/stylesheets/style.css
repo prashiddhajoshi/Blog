@@ -121,7 +121,12 @@ pre {
     padding: 10px;
     font-size: 11px;
 }
-
+.new_post{
+    height:500px;
+    width:500px;
+    margin-left:600px;
+   border:2px solid black;
+}
 #show a {
     color: #D63D1E;
     margin-left:30px;

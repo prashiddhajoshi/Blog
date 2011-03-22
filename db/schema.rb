@@ -10,15 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110322075519) do
+ActiveRecord::Schema.define(:version => 20110322105530) do
 
-  create_table "blogs", :force => true do |t|
+  create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "description"
     t.string   "postedby"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.datetime "time"
+    t.datetime "posted_time"
   end
 
 end
