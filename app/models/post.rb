@@ -5,10 +5,10 @@ class Post < ActiveRecord::Base
 
   before_save :do_titlecasing
 
-  scope :show_all, self.find(:all, :order => "title ASC")
+  scope :show_all, :order => "title ASC"
 
-  def showall
-    self.show_all
+  def index
+    show_all
   end
 
   private

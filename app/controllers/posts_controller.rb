@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_filter :filter_by_date, :only => :index
 
   def index
-    @posts = Post.all
+    @posts = Post.show_all
   end
 
   def new

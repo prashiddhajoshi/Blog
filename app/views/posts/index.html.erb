@@ -1,15 +1,18 @@
 <header>Post Listing</header>
 <div id="post_container">
-  <ul type="none">
+  <ul type="none" id="blog_listing">
     <% @posts.each do|post| %>
     <li>
       <h2><%= post.title %></h2>
     </li>
     <li>
-      <p><%= post.description %></p>
+      <p><b>Desciption:</b> <%= post.description %></p>
     </li>
     <li>
-      <p><%= post.postedby %></p><p><%= post.posted_time %></p>
+      <p><b>Posted By:</b> <%= post.postedby %></p>
+    </li>
+    <li>
+      <p><b>Posted Time:</b> <%= post.posted_time %></p>
     </li>
     <%= link_to 'Show', post %>
     <%= link_to 'Edit', edit_post_path(post) %>
