@@ -9,19 +9,22 @@ class BlogsController < ApplicationController
   end
 
   def edit
+    @blog = Blog.find(params[:id])
   end
 
   def show
+    @blog = Blog.find(params[:id])
   end
 
-  def delete
-    @blog = Blog.new (params[:id])
+  def destroy
+    @blog = Blog.find(params[:id])
     @blog.destroy
     redirect_to blogs_url
   end
 
   def create
     @blog = Blog.new (params[:blog])
+    @blog.time = Time.now
     if @blog.save
       flash[:notice] = "Blog Posted Successfully!"
       redirect_to blogs_url

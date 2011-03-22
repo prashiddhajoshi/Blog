@@ -1,2 +1,9 @@
-<h1>Blogs#edit</h1>
-<p>Find me in app/views/blogs/edit.html.erb</p>
+<div id="edit">
+  <header>Edit Blog</header>
+  <div id="edit_form">
+  <%= render 'form' %>
+
+  <%= link_to 'Show', @blog %> |
+  <%= link_to 'Back', blogs_path %>
+</div>
+</div>
