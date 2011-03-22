@@ -1,0 +1,13 @@
+<header>Blog Listing</header>
+<div id="blog_container">
+  <ul>
+    <% @blogs.each do|blog| %>
+    <li>
+      <h2><%= blog.title %></h2>
+    </li>
+    <li>
+      <p><%= blog.description %></p>
+    </li>
+    <% end %>
+  </ul>
+</div>
