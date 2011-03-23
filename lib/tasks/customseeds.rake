@@ -19,7 +19,7 @@ namespace :customseeds do
       end
     end
 
-    desc "To change published into unpublished"
+    desc "To change published posts into unpublished"
     task :pub_to_unpub => :environment do
       @posts = Post.all
       @posts.each do |p|
@@ -29,7 +29,7 @@ namespace :customseeds do
       end
     end
 
-    desc "To change unpublished into published"
+    desc "To change unpublished posts into published"
     task :unpub_to_pub => :environment do
       @posts = Post.all
       @posts.each do |p|
