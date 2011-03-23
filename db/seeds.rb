@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-#   Mayor.create(:name => 'Daley', :city => cities.first)
+[
+  {:title => "Blog1_seed", :description => "This is blog posted by Manish", :postedby => "Manish", :posted_time => Time.now, :publish => false},
+  {:title => "Blog2_seed", :description => "This is blog posted by Manish", :postedby => "Manish", :posted_time => Time.now, :publish => true},
+  {:title => "Blog3_seed", :description => "This is blog posted by Manish", :postedby => "Manish", :posted_time => Time.now, :publish => false},
+  {:title => "Blog4_seed", :description => "This is blog posted by Manish", :postedby => "Manish", :posted_time => Time.now, :publish => true},
+  ].each do |attrs|
+    Post.find_or_create_by_title(attrs)
+  end

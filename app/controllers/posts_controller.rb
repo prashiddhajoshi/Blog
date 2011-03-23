@@ -37,10 +37,10 @@ class PostsController < ApplicationController
     @post.posted_time = Time.now
 
     if @post.save
-      flash[:notice] = "Post Posted Successfully!"
+      flash[:notice] = "Your blog Posted Successfully!"
       redirect_to posts_url
     else
-      flash[:notice] = "Post could not be posted!"
+      flash[:notice] = "Your blog could not be posted!"
       render "new"
     end
   end

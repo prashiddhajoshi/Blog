@@ -1,22 +1,27 @@
 <div id= "show">
   <div id= "show_body">
     <p id="notice"><%= notice %></p>
+    <% if @post.publish==true%>
+      <p class="show_details">
+        <b>Title:</b>
+        <%= @post.title %>
+      </p>
 
-    <p class="show_details">
-      <b>Title:</b>
-      <%= @post.title %>
-    </p>
+      <p class="show_details">
+        <b>Description:</b>
+        <%= @post.description %>
+      </p>
 
-    <p class="show_details">
-      <b>Description:</b>
-      <%= @post.description %>
-    </p>
+      <p class="show_details">
+        <b>Posted By:</b>
+        <%= @post.postedby %>
+      </p>
 
-    <p class="show_details">
-      <b>Posted By:</b>
-      <%= @post.postedby %><%= @post.posted_time %>
-    </p>
-
+      <p class="show_details">
+        <b>Posted Time:</b>
+        <%= @post.posted_time.time %>
+      </p>
+      <% end %>
   </div>
 
   <%= link_to 'Edit', edit_post_path(@post) %> |

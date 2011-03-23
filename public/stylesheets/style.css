@@ -14,7 +14,7 @@ body, p, ol, ul, td {
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
     background:#C99F65;
-    height:250px;
+    height:350px;
     width:450px;
     margin:50px 50px 50px 300px;
     padding:15px 15px 15px 15px;
@@ -31,7 +31,7 @@ header{
     text-align:center;
     font-family: calibri, arial, helvetica, sans-serif;
     font-size:   22px;
-    color:#DED2CE;
+    color:#3D241C;
 }
 
 #new{
@@ -50,7 +50,6 @@ header{
     margin:15px 15px 0 15px;
     padding:25px 15px 10px 75px;
     background-color:#635022;
-    color:#C99D9D;
 }
 
 #show{
@@ -74,8 +73,7 @@ header{
     padding:25px 15px 10px 45px;
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
-    background:#635022;
-
+    background:#635022
 }
 
 #edit{
@@ -120,17 +118,15 @@ header{
     border:2px solid black;
     width:400px;
 }
-
+#new_container{
+    margin-left:550px;
+    border:2px solid black;
+    width:450px;
+}
 pre {
     background-color: #eee;
     padding: 10px;
     font-size: 11px;
-}
-.new_post{
-    height:500px;
-    width:500px;
-    margin-left:600px;
-    border:2px solid black;
 }
 #show a {
     color: #D63D1E;
@@ -148,6 +144,10 @@ pre {
     color: #D63D1E;
     margin-left:30px;
     font-size:20px;
+}
+
+#error_msg{
+    text-align:center;
 }
 
 a:visited {
@@ -169,7 +169,6 @@ div.field, div.actions {
 
 .field_with_errors {
     padding: 1px;
-    background-color: #3D241C;
     display: table;
 }
 
@@ -178,10 +177,9 @@ div.field, div.actions {
     border: 2px solid #3D241C;
     padding: 7px;
     padding-bottom: 0;
-    margin-left: -30px;
+    margin-top:20px;
+    margin-left: 100px;
     margin-bottom: 20px;
-    background-color: #f0f0f0;
-    color:#000;
 }
 
 #error_explanation h2 {
@@ -191,8 +189,6 @@ div.field, div.actions {
     font-size: 12px;
     margin: -2px;
     margin-bottom: 0px;
-    background-color: #c00;
-    color: #000;
 }
 
 #error_explanation ul li {

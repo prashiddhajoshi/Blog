@@ -1,4 +1,15 @@
 <%= form_for(@post) do |form| %>
+<% if @post.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@post.errors.count, "error") %> Listed Below:</h2>
+
+  <ul>
+    <% @post.errors.full_messages.each do |err_msg| %>
+    <li><%= err_msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
 <p>
   <%= form.label :title %><br />
   <%= form.text_field :title %>
@@ -10,6 +21,10 @@
 <p>
   <%= form.label :postedby %><br />
   <%= form.text_field :postedby %>
+</p>
+<p>
+  <%= form.label :publish %><br />
+  <%= form.check_box :publish %>
 </p>
 <p>
   <%= form.submit%>
