@@ -77,11 +77,10 @@ header{
 }
 
 #edit{
-    /*background-color:#BFCC4E;*/
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
     background:#3D241C;
-    height:420px;
+    height:550px;
     width:350px;
     margin:50px 50px 50px 300px;
     padding:15px 15px 15px 15px;
