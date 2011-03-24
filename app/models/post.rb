@@ -4,6 +4,7 @@ class Post < ActiveRecord::Base
   validates :postedby, :presence => true
 
   belongs_to :author
+  has_many :comments
 
   before_save :do_titlecasing
 
