@@ -10,27 +10,26 @@
   </ul>
 </div>
 <% end %>
-<p>
+<p class="show_details">
   <%= form.label :title %><br />
   <%= form.text_field :title %>
 </p>
-<p>
+<p class="show_details">
   <%= form.label :description %><br />
   <%= form.text_area :description %>
 </p>
-<p>
+<p class="show_details">
   <%= form.label :postedby %><br />
   <%= form.text_field :postedby %>
 </p>
-<p>
+<p class="show_details">
   <%= form.label :category %><br />
-  <%= form.text_field :subject %>
-</p>
-<p>
+  <%= select_tag "category", options_for_select([ "Science", "Business", "Entertainment", "Sports", "Technology" ], "Technology") %>
+<p class="show_details">
   <%= form.label :publish %><br />
   <%= form.check_box :publish %>
 </p>
-<p>
+<p class="show_details">
   <%= form.submit%>
 </p>
 <% end%>

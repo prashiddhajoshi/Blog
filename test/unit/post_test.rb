@@ -7,6 +7,7 @@ class PostTest < ActiveSupport::TestCase
   end
 end
 
+
 # == Schema Information
 #
 # Table name: posts
@@ -19,5 +20,6 @@ end
 #  updated_at  :datetime
 #  posted_time :datetime
 #  publish     :boolean
+#  category    :string(255)
 #
 

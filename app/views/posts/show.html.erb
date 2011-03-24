@@ -2,28 +2,44 @@
   <div id= "show_body">
     <p id="notice"><%= notice %></p>
     <% if @post.publish==true%>
-      <p class="show_details">
-        <b>Title:</b>
-        <%= @post.title %>
-      </p>
+    <p class="show_details">
+      <b>Title:</b>
+      <%= @post.title %>
+    </p>
 
-      <p class="show_details">
-        <b>Description:</b>
-        <%= @post.description %>
-      </p>
+    <p class="show_details">
+      <b>Description:</b>
+      <%= @post.description %>
+    </p>
 
-      <p class="show_details">
-        <b>Posted By:</b>
-        <%= @post.postedby %>
-      </p>
+    <p class="show_details">
+      <b>Posted By:</b>
+      <%= @post.postedby %>
+    </p>
 
+    <p class="show_details">
+      <b>Posted Time:</b>
+      <%= @post.posted_time.time %>
+    </p>
+  </div>
+  <div id="comment">
+    <% @post.comments.each do |comment| %>
+    <div class="comment_each">
       <p class="show_details">
-        <b>Posted Time:</b>
-        <%= @post.posted_time.time %>
+        <b>Commented By:</b>
+        <%= comment.commented_by %>
+      </p>
+      <p class="show_details">
+        <b>Comment:</b>
+        <%= comment.comment_body %>
       </p>
       <% end %>
+    </div>
+    <% end %>
   </div>
-
+  <div id="comment_form">
+    <%= render('comment/form')%>
+  </div>
   <%= link_to 'Edit', edit_post_path(@post) %> |
   <%= link_to 'Back', posts_path %>
 </div>

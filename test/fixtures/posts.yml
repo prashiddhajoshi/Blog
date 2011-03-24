@@ -10,6 +10,7 @@ two:
   description: MyText
   postedby: MyString
 
+
 # == Schema Information
 #
 # Table name: posts
@@ -22,5 +23,6 @@ two:
 #  updated_at  :datetime
 #  posted_time :datetime
 #  publish     :boolean
+#  category    :string(255)
 #
 
