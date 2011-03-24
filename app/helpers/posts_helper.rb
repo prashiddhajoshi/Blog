@@ -7,6 +7,7 @@ module PostsHelper
           "Title: ",post.title,"<br/>",
           "Description: ",post.description,"<br/>",
           "Posted By: ",post.postedby,"<br/>",
+          "category :",post.category.subject,"<br/>",
           "Posted Time",post.posted_time,"<br/>",
           link_to_icon ("show", post_path(post)),
           link_to_icon ("edit", edit_post_path(post)),

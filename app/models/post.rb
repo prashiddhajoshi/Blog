@@ -3,6 +3,8 @@ class Post < ActiveRecord::Base
   validates :description, :presence => true
   validates :postedby, :presence => true
 
+  belongs_to :author
+
   before_save :do_titlecasing
 
   scope :show_all, :order => "title ASC"
@@ -19,3 +21,17 @@ class Post < ActiveRecord::Base
   end
 
 end
+# == Schema Information
+#
+# Table name: posts
+#
+#  id          :integer         not null, primary key
+#  title       :string(255)
+#  description :text
+#  postedby    :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#  posted_time :datetime
+#  publish     :boolean
+#
+
