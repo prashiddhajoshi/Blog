@@ -89,7 +89,8 @@ header{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
     background:#547359;
-    width:680px;
+    width:650px;
+    margin-left:25px;
     margin-top:15px;
     margin-bottom:5px;
     padding-top:15px;
@@ -164,7 +165,7 @@ pre {
     font-size: 11px;
 }
 #show a {
-    color: #547359;
+    color: #C7D4D9;
     margin-left:30px;
     font-size:20px;
 }
