@@ -1,11 +1,15 @@
 <%= form_for(@post) do |form| %>
 <% if @post.errors.any? %>
 <div id="error_explanation">
-  <h2><%= pluralize(@post.errors.count, "error") %> Listed Below:</h2>
+  <h2>
+    <%= pluralize(@post.errors.count, "error") %> Listed Below:
+  </h2>
 
   <ul>
     <% @post.errors.full_messages.each do |err_msg| %>
-    <li><%= err_msg %></li>
+    <li>
+      <%= err_msg %>
+    </li>
     <% end %>
   </ul>
 </div>
@@ -25,8 +29,9 @@
 <p class="show_details">
   <%= form.label :category %><br />
   <%= select_tag "category", options_for_select([ "Science", "Business", "Entertainment", "Sports", "Technology" ], "Technology") %>
+</p>
 <p class="show_details">
-  <%= form.label :publish %><br />
+  <%= form.label :publish %> <br />
   <%= form.check_box :publish %>
 </p>
 <p class="show_details">

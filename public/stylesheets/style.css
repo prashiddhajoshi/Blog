@@ -2,14 +2,18 @@ body {
     background-color: #fff;
     color: #333;
 }
-
-body, p, ol, ul, td {
+body, p, ol, td {
     font-family: calibri, arial, helvetica, sans-serif;
     font-size:   13px;
     line-height: 18px;
     background-color: #A8AFBF;
 }
-
+ul{
+    font-family: calibri, arial, helvetica, sans-serif;
+    font-size:   13px;
+    line-height: 18px;
+    background:#42454A;
+}
 #container{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
@@ -19,13 +23,11 @@ body, p, ol, ul, td {
     margin:50px 50px 50px 300px;
     padding:15px 15px 15px 15px;
 }
-
 #container td{
     text-align:center;
     background:#fff;
     margin:15px;
 }
-
 header{
     padding-top:15px;
     text-align:center;
@@ -51,7 +53,6 @@ header{
     margin:50px 50px 50px 300px;
     padding:15px 15px 15px 15px;
 }
-
 #new_student_profile{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
@@ -59,9 +60,7 @@ header{
     padding:25px 15px 10px 75px;
     background-color:#547359;
 }
-
 #show{
-    /*background-color:#BFCC4E;*/
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
     background:#42454A;
@@ -96,15 +95,12 @@ header{
     padding-top:15px;
     padding-bottom:15px;
 }
-
 .show_details{
     background-color:#547359;
-    /*color:#C99D9D;*/
     margin:20px 20px 20px 20px;
 }
 .comment_details{
     background-color:#547359;
-    color:#C99D9D;
     margin:20px 20px 20px 20px;
 }
 #show_body{
@@ -114,7 +110,6 @@ header{
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
     background:#547359
 }
-
 #edit{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
@@ -123,7 +118,6 @@ header{
     margin:50px 50px 50px 300px;
     padding:15px 15px 15px 15px;
 }
-
 .edit_student_profile{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
@@ -132,7 +126,6 @@ header{
     background-color:#547359;
     color:#C99D9D;
 }
-
 .new_attendence_entry{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
@@ -141,7 +134,9 @@ header{
     background-color:#547359;
     color:#C99D9D;
 }
-
+.post{
+    background:#42454A;
+}
 .edit_post{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
@@ -151,9 +146,12 @@ header{
     color:#C99D9D;
 }
 #post_container{
-    margin-left:600px;
+    border-radius: 40px;
+    box-shadow: 10px 20px 10px rgba(0,0,0,.4);
+    background:#42454A;
+    width:680px;
+    margin:15px 15px 20px 400px;
     border:2px solid black;
-    width:400px;
 }
 #new_container{
     margin-left:550px;
@@ -166,49 +164,45 @@ pre {
     font-size: 11px;
 }
 #show a {
-    color: #D63D1E;
+    color: #547359;
     margin-left:30px;
     font-size:20px;
 }
-
+#post_container a {
+    color: #547359;
+    margin-left:30px;
+    font-size:20px;
+}
 #new a {
-    color: #D63D1E;
+    color: #547359;
     margin-left:30px;
     font-size:20px;
 }
-
 #edit a {
-    color: #D63D1E;
+    color: #547359;
     margin-left:30px;
     font-size:20px;
 }
-
 #error_msg{
     text-align:center;
 }
-
 a:visited {
     color: #666;
 }
-
 a:hover {
     color: #fff;
     background-color:#000;
 }
-
 div.field, div.actions {
     margin-bottom: 10px;
 }
-
 #notice {
     color: green;
 }
-
 .field_with_errors {
     padding: 1px;
     display: table;
 }
-
 #error_explanation {
     width: 220px;
     border: 2px solid #42454A;
@@ -218,7 +212,6 @@ div.field, div.actions {
     margin-left: 100px;
     margin-bottom: 20px;
 }
-
 #error_explanation h2 {
     text-align: left;
     font-weight: bold;
@@ -227,7 +220,6 @@ div.field, div.actions {
     margin: -2px;
     margin-bottom: 0px;
 }
-
 #error_explanation ul li {
     font-size: 12px;
     list-style: square;

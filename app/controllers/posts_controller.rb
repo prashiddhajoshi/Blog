@@ -27,15 +27,15 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-      if @post.update_attributes(params[:post])
-        if @post.publish==true
-          redirect_to(@post, :notice => 'Your Blog was successfully updated.')
-          else
-            redirect_to posts_url
-          end
+    if @post.update_attributes(params[:post])
+      if @post.publish==true
+        redirect_to(@post, :notice => 'Your Blog was successfully updated.')
       else
-        render :action => "edit"
+        redirect_to posts_url
       end
+    else
+      render :action => "edit"
+    end
   end
 
   def create
@@ -55,7 +55,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:post_id])
     @post.no_of_likes = @post.no_of_likes + 1
     if @post.update_attributes(params[:post])
-        redirect_to(@post, :notice => 'You Liked the post.')
+      redirect_to(@post, :notice => 'You Liked the post.')
     end
   end
 
