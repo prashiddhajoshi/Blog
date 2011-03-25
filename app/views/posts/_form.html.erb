@@ -23,7 +23,7 @@
   <%= form.text_area :description %>
 </p>
 <p class="show_details">
-  <%= form.label :postedby %><br />
+  <%= form.label :Name %><br />
   <%= form.text_field :postedby %>
 </p>
 <p class="show_details">
@@ -31,7 +31,7 @@
   <%= select_tag "category", options_for_select([ "Science", "Business", "Entertainment", "Sports", "Technology" ], "Technology") %>
 </p>
 <p class="show_details">
-  <%= form.label :publish %> <br />
+  <%= form.label :publish %>
   <%= form.check_box :publish %>
 </p>
 <p class="show_details">
