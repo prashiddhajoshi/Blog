@@ -3,6 +3,7 @@ BlogApplication::Application.routes.draw do
   resources :posts
 
   resources :posts do
+    get "like"
     resources :comments
   end
 

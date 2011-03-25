@@ -10,6 +10,13 @@ class CommentsController < ApplicationController
       flash[:notice] = "Your comment could not be posted!"
       render "comment"
     end
-
   end
+
+  def destroy
+    @post = Post.find(params[:post_id])
+    @comment = @post.comments.find(params[:id])
+    @comment.destroy
+    redirect_to post_url(@post)
+  end
+
 end

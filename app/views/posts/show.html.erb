@@ -1,6 +1,5 @@
 <div id= "show">
   <div id= "show_body">
-    <p id="notice"><%= notice %></p>
     <% if @post.publish==true%>
     <p class="show_details">
       <b>Title:</b>
@@ -19,22 +18,37 @@
 
     <p class="show_details">
       <b>Posted Time:</b>
-      <%= @post.posted_time.time %>
+      <%= @post.posted_time.to_formatted_s(:short) %>
     </p>
+
+    <p class="show_details">
+      <b>Number of likes:</b>
+      <%= @post.no_of_likes %>
+    </p>
+
+    <p class="show_details">
+      <%= link_to 'Likes', post_like_path(@post) %>
+    </p>
+
   </div>
   <div id="comment">
     <% @post.comments.each do |comment| %>
     <div class="comment_each">
-      <p class="show_details">
+      <p class="comment_details">
         <b>Commented By:</b>
         <%= comment.commented_by %>
       </p>
-      <p class="show_details">
+      <p class="comment_details">
         <b>Comment:</b>
         <%= comment.comment_body %>
       </p>
-      <% end %>
+      <p class="comment_details">
+        <%= comment.created_at.to_formatted_s(:short) %>
+      </p>
+      <%= link_to "Delete", post_comment_path(@post,comment), :method => :delete, :confirm => "Do you really want to destroy?"%>
     </div>
+      <% end %>
+
     <% end %>
   </div>
   <div id="comment_form">

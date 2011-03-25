@@ -7,7 +7,7 @@ module PostsHelper
           "Title: ",post.title,"<br/>",
           "Description: ",post.description,"<br/>",
           "Posted By: ",post.postedby,"<br/>",
-          "Posted Time",post.posted_time,"<br/>",
+          "Posted Time: ",post.posted_time.to_formatted_s(:short),"<br/>",
           link_to_icon("show", post_path(post)),
           link_to_icon("edit", edit_post_path(post)),
           link_to_icon("destroy", post_path(post), :method => :delete, :confirm => "Do you really want to destroy?"),

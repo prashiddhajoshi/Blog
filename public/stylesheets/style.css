@@ -31,13 +31,21 @@ header{
     text-align:center;
     font-family: calibri, arial, helvetica, sans-serif;
     font-size:   22px;
-    color:#3D241C;
+    color:#547359;
 }
-
+#new_container{
+    border-radius: 40px;
+    box-shadow: 10px 20px 10px rgba(0,0,0,.4);
+    background:#42454A;
+    height:770px;
+    width:350px;
+    margin:50px 50px 50px 300px;
+    padding:15px 15px 15px 15px;
+}
 #new{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
-    background:#3D241C;
+    background:#42454A;
     height:770px;
     width:350px;
     margin:50px 50px 50px 300px;
@@ -49,14 +57,14 @@ header{
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
     margin:15px 15px 0 15px;
     padding:25px 15px 10px 75px;
-    background-color:#635022;
+    background-color:#547359;
 }
 
 #show{
     /*background-color:#BFCC4E;*/
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
-    background:#3D241C;
+    background:#42454A;
     width:700px;
     margin:50px 50px 10px 300px;
     padding:15px 15px 5px 15px;
@@ -64,16 +72,25 @@ header{
 #comment{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
-    background:#635022;
-    width:700px;
+    background:#42454A;
+    width:680px;
+    margin:15px 15px 20px 15px;
+}
+.comment_each{
+    border-radius: 40px;
+    box-shadow: 10px 20px 10px rgba(0,0,0,.4);
+    background:#547359;
+    width:620px;
     padding-top:15px;
-    padding-bottom:15px;
+    margin-top:15px;
+    margin-left:15px;
+    padding-bottom:10px;
 }
 #comment_form{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
-    background:#635022;
-    width:700px;
+    background:#547359;
+    width:680px;
     margin-top:15px;
     margin-bottom:5px;
     padding-top:15px;
@@ -81,24 +98,28 @@ header{
 }
 
 .show_details{
-    background-color:#635022;
-    color:#C99D9D;
+    background-color:#547359;
+    /*color:#C99D9D;*/
+    margin:20px 20px 20px 20px;
 }
-
+.comment_details{
+    background-color:#547359;
+    color:#C99D9D;
+    margin:20px 20px 20px 20px;
+}
 #show_body{
     margin:15px 15px 20px 15px;
     padding:25px 15px 10px 45px;
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
-    background:#635022
+    background:#547359
 }
 
 #edit{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
-    background:#3D241C;
-    height:550px;
-    width:350px;
+    background:#42454A;
+    width:450px;
     margin:50px 50px 50px 300px;
     padding:15px 15px 15px 15px;
 }
@@ -108,7 +129,7 @@ header{
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
     margin:15px 15px 20px 15px;
     padding:25px 15px 10px 75px;
-    background-color:#635022;
+    background-color:#547359;
     color:#C99D9D;
 }
 
@@ -117,16 +138,16 @@ header{
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
     margin:15px 15px 20px 15px;
     padding:25px 15px 10px 75px;
-    background-color:#635022;
+    background-color:#547359;
     color:#C99D9D;
 }
 
-.edit_attendence_entry{
+.edit_post{
     border-radius: 40px;
     box-shadow: 10px 20px 10px rgba(0,0,0,.4);
     margin:15px 15px 20px 15px;
-    padding:25px 15px 10px 75px;
-    background-color:#635022;
+    padding:25px 15px 10px 15px;
+    background-color:#547359;
     color:#C99D9D;
 }
 #post_container{
@@ -190,7 +211,7 @@ div.field, div.actions {
 
 #error_explanation {
     width: 220px;
-    border: 2px solid #3D241C;
+    border: 2px solid #42454A;
     padding: 7px;
     padding-bottom: 0;
     margin-top:20px;

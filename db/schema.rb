@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110324051349) do
+ActiveRecord::Schema.define(:version => 20110325105219) do
 
   create_table "authors", :force => true do |t|
     t.string   "first_name"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20110324051349) do
     t.datetime "posted_time"
     t.boolean  "publish"
     t.string   "category"
+    t.integer  "no_of_likes", :default => 0
   end
 
 end
