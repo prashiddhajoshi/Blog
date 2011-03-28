@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  commented_by: MyString
+  comment_body: MyText
+
+two:
+  commented_by: MyString
+  comment_body: MyText
+
+# == Schema Information
+#
+# Table name: comments
+#
+#  id           :integer         not null, primary key
+#  commented_by :string(255)
+#  comment_body :text
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+

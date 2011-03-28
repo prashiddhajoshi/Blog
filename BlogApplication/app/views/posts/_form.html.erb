@@ -1,0 +1,40 @@
+<%= form_for(@post) do |form| %>
+<% if @post.errors.any? %>
+<div id="error_explanation">
+  <h2>
+    <%= pluralize(@post.errors.count, "error") %> Listed Below:
+  </h2>
+
+  <ul>
+    <% @post.errors.full_messages.each do |err_msg| %>
+    <li>
+      <%= err_msg %>
+    </li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<p class="show_details">
+  <%= form.label :title %><br />
+  <%= form.text_field :title %>
+</p>
+<p class="show_details">
+  <%= form.label :description %><br />
+  <%= form.text_area :description %>
+</p>
+<p class="show_details">
+  <%= form.label :Name %><br />
+  <%= form.text_field :postedby %>
+</p>
+<p class="show_details">
+  <%= form.label :category %><br />
+  <%= select_tag "category", options_for_select([ "Science", "Business", "Entertainment", "Sports", "Technology" ], "Technology") %>
+</p>
+<p class="show_details">
+  <%= form.label :publish %>
+  <%= form.check_box :publish %>
+</p>
+<p class="show_details">
+  <%= form.submit%>
+</p>
+<% end%>

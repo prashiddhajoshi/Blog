@@ -1,0 +1,24 @@
+<div id= "show">
+  <div id= "show_body">
+    <p id="notice"><%= notice %></p>
+
+    <p class="show_details">
+      <b>Title:</b>
+      <%= @blog.title %>
+    </p>
+
+    <p class="show_details">
+      <b>Description:</b>
+      <%= @blog.description %>
+    </p>
+
+    <p class="show_details">
+      <b>Posted By:</b>
+      <%= @blog.postedby %><%= @blog.time %>
+    </p>
+
+  </div>
+
+  <%= link_to 'Edit', edit_blog_path(@blog) %> |
+  <%= link_to 'Back', blogs_path %>
+</div>

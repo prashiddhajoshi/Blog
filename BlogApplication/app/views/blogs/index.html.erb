@@ -1,0 +1,20 @@
+<header>Blog Listing</header>
+<div id="blog_container">
+  <ul type="none">
+    <% @blogs.each do|blog| %>
+    <li>
+      <h2><%= blog.title %></h2>
+    </li>
+    <li>
+      <p><%= blog.description %></p>
+    </li>
+    <li>
+      <p><%= blog.postedby %></p><p><%= blog.time %></p>
+    </li>
+    <%= link_to 'Show', blog %>
+    <%= link_to 'Edit', edit_blog_path(blog) %>
+    <%= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete %>
+    <% end %>
+  </ul>
+<%= link_to 'Post New Blog', new_blog_path %>
+</div>

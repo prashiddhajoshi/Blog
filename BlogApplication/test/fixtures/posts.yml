@@ -1,0 +1,28 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  postedby: MyString
+
+two:
+  title: MyString
+  description: MyText
+  postedby: MyString
+
+
+# == Schema Information
+#
+# Table name: posts
+#
+#  id          :integer         not null, primary key
+#  title       :string(255)
+#  description :text
+#  postedby    :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#  posted_time :datetime
+#  publish     :boolean
+#  category    :string(255)
+#
+
